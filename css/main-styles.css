@@ -369,3 +369,8 @@ body
 .order-form-title-highlight {
   color: var(--background);
 }
+
+.order-request-form {
+  display: flex;
+  flex-direction: column;
+}
