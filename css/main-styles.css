@@ -374,3 +374,60 @@ body
   display: flex;
   flex-direction: column;
 }
+
+.input-order {
+  display: block;
+  width: 100%;
+  height: 46px;
+  padding: 14px 16px;
+  margin-bottom: 15px;
+  outline: none;
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  border-radius: 30px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+@media screen and (min-width: 375px) {
+  .input-order {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input-order {
+    height: 52px;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+.input-order::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+@media screen and (min-width: 375px) {
+  .input-order::placeholder {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input-order::placeholder {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+.input-order:focus {
+  border-color: var(--maincolor);
+}
+.input-order:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.input-order:not(:placeholder-shown):valid {
+  border-color: green;
+}
