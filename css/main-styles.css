@@ -1,9 +1,13 @@
+@charset "UTF-8";
 :root {
-    --maincolor: #e6e6e6;
-    --green: #576F35;
-    --black: #141414;
-    --white: #FBFBFB;
+  --text: #141414;
+  --background: #576f35;
+  --main-text: #fbfbfb;
+  --hover-btn: #622133;
+  --maincolor: #7A3145;
+  --white: #FBFBFB;
 }
+
 p,
 h1,
 h2,
