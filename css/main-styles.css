@@ -576,3 +576,14 @@ body
     line-height: 111%;
   }
 }
+
+.social-networks-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .social-networks-list {
+    gap: 12px;
+  }
+}
