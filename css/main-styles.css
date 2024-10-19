@@ -587,3 +587,23 @@ body
     gap: 12px;
   }
 }
+
+.social-networks-item {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: var(--main-text);
+}
+@media screen and (min-width: 375px) {
+  .social-networks-item {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .your-order-follow-item {
+    font-size: 32px;
+    line-height: 100%;
+  }
+}
