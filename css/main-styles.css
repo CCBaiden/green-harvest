@@ -361,3 +361,11 @@ body
     margin-bottom: 50px;
   }
 }
+
+.order-form-highlighted-text {
+  color: var(--maincolor);
+}
+
+.order-form-title-highlight {
+  color: var(--background);
+}
