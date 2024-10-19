@@ -259,3 +259,39 @@ body
     width: 751px;
   }
 }
+
+.your-order-title-highlight {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.your-order-text {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 129%;
+  color: var(--main-text);
+}
+
+@media screen and (min-width: 375px) {
+  .your-order-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .your-order-text {
+    width: 640px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .your-order-text {
+    width: 742px;
+  }
+}
