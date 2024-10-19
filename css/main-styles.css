@@ -338,3 +338,26 @@ body
     padding: 50px;
   }
 }
+
+.order-form-title {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+@media screen and (min-width: 375px) {
+  .order-form-title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .order-form-title {
+    margin-bottom: 50px;
+  }
+}
