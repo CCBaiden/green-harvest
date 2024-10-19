@@ -512,3 +512,24 @@ body
     line-height: 111%;
   }
 }
+
+.container-img-follow-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 30px;
+  padding: 40px 20px;
+  background: var(--background);
+}
+@media screen and (min-width: 768px) {
+  .container-img-follow-box {
+    width: 628px;
+    padding: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-img-follow-box {
+    width: 527px;
+    height: 534px;
+  }
+}
