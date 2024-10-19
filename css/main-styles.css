@@ -8,6 +8,10 @@
   --white: #FBFBFB;
 }
 
+:root {
+  --font-family: "Inter Tight", sans-serif;
+}
+
 p,
 h1,
 h2,
