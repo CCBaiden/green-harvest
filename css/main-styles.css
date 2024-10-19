@@ -315,3 +315,26 @@ body
     gap: 24px;
   }
 }
+
+.container-order-form-box {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  padding: 40px 20px;
+  background-color: var(--main-text);
+}
+
+@media screen and (min-width: 768px) {
+  .container-order-form-box {
+    width: 628px;
+    padding: 50px 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-order-form-box {
+    width: 529px;
+    height: 534px;
+    padding: 50px;
+  }
+}
