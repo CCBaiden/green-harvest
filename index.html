@@ -1,137 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenHarvest</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+  </head>
+  <body>
+    <!-- YOUR ORDER -->
+    <section class="your-order" id="your-order">
+      <div class="container container-your-order">
+        <div class="container-your-order-title">
+          <h2 class="your-order-title">
+            Fresh
+            <span class="your-order-title-highlight">Harvest</span>
+            Box has got you covered
+          </h2>
+          <p class="your-order-text">
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+        </div>
+        <div class="container-order-box-details">
+          <div class="container-order-form-box">
+            <form class="order-request-form">
+              <h2 class="order-form-title">
+                Ordering
+                <span class="order-form-highlighted-text">from us</span>
+                is quick and easy! Fill out
+                <span class="order-form-title-highlight"> the form</span>
+                below and we will contact you !
+              </h2>
+              <div class="container-label">
+                <div class="input-container">
+                  <input
+                    class="input-order"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="input-container">
+                  <input
+                    class="input-order"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                    required
+                  />
+                </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GreenHarvest</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/main-styles.css" />
-</head>
+                <div class="container-textarea">
+                  <textarea
+                    class="container-comment"
+                    name="user-comment"
+                    id="user-comment"
+                    placeholder="Comment"
+                  ></textarea>
+                </div>
+              </div>
+              <button class="order-form-btn" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="container-img-follow-box">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/yourorder/yourorder-desktop-1x.png 1x,
+                  ./img/yourorder/yourorder-desktop-2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/yourorder/yourorder-tablet-1x.png 1x,
+                  ./img/yourorder/yourorder-tablet-2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/yourorder/yourorder-mob-1x.png 1x,
+                  ./img/yourorder/yourorder-mob-2x.png 2x
+                "
+              />
+              <img
+                src="./img/yourorder/yourorder-tablet-2x.png"
+                alt="Person making a fruit drink"
+              />
+            </picture>
 
-<body>
-  <!-- HEADER -->
-<main>
-  <header class=""></header>
-  <!-- HERO -->
-  <section class=""></section>
-  <!-- HOW IT WORKS -->
-  <section class=""></section>
-  <!-- ADVERTISEMENT -->
-  <section class=""></section>
-  <!-- VEGETABLES -->
-  <section class="vegetables">
-  </section>
-  <!-- REVIEWS -->
-  <section class=""></section>
-              <!-- YOUR ORDER -->
-              <section class="your-order" id="your-order">
-                <div class="container section">
-                  <h2 class="your-order-title">
-                    Fresh
-                    <span class="your-order-title-highlight">Harvest</span> Box
-                    has got you covered
-                  </h2>
-                  <p class="your-order-text">
-                    Our boxes are packed with delicious, nutritious vegetables,
-                    perfect for anyone looking to eat healthier or support local
-                    farmers. Order your box today and start enjoying the best
-                    that nature has to offer!
-                  </p>
-                  <div class="container-order-box-details">
-                    <div class="container-order-form-box">
-                      <h3 class="order-form-title">
-                        Ordering
-                        <span class="order-form-highlighted-text">from us</span>
-                        is quick and easy! Fill out
-                        <span class="order-form-title-highlight">the form</span>
-                        below and we will contact you!
-                      </h3>
-                      <form class="order-request-form">
-                        <input
-                          class="input-order"
-                          type="text"
-                          name="user-name"
-                          id="user-name"
-                          placeholder="Full Name"
-                          required
-                        />
-                        <input
-                          class="input-order"
-                          type="email"
-                          name="email"
-                          placeholder="Email"
-                          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                          required
-                        />
-                        <textarea
-                          class="container-comment"
-                          name="user-comment"
-                          id="user-comment"
-                          placeholder="Comment"
-                        ></textarea>
-                        <button class="order-form-btn" type="submit">
-                          Send
-                        </button>
-                      </form>
-                    </div>
-                    <div class="container-img-follow-box">
-                      <picture>
-                        <source
-                          media="(min-width: 1280px)"
-                          srcset="
-                            ./img/yourorder/yourorder-desktop-1x.png 1x,
-                            ./img/yourorder/yourorder-desktop-2x.png 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 768px)"
-                          srcset="
-                            ./img/yourorder/yourorder-tablet-1x.png 1x,
-                            ./img/yourorder/yourorder-tablet-2x.png 2x
-                          "
-                        />
-                        <source
-                          media="(max-width: 767px)"
-                          srcset="
-                            ./img/yourorder/yourorder-mob-1x.png 1x,
-                            ./img/yourorder/yourorder-mob-2x.png 2x
-                          "
-                        />
-                        <img
-                          class="your-order-follow-img"
-                          src="./img/yourorder/yourorder-tablet-2x.png"
-                          alt="Person making a fruit drink"
-                        />
-                      </picture>
-                      <h3 class="social-networks-title">
-                        Follow us on our social networks:
-                      </h3>
-                      <ul class="social-networks-list">
-                        <li class="social-networks-item">
-                          <a
-                            href="https://www.instagram.com/goit.turkiye/"
-                            class="order-social-link"
-                            target="_blank"
-                            >instagram</a
-                          >
-                        </li>
-                        <li class="social-networks-item">/</li>
-                        <li class="social-networks-item">
-                          <a
-                            href="https://www.facebook.com/profile.php?id=61558036560161/"
-                            class="order-social-link"
-                            target="_blank"
-                            >facebook</a
-                          >
-                        </li>
-                        <li class="social-networks-item">/</li>
-                        <li class="social-networks-item">
-                          <a
-                            href="https://www.youtube.com/@GoITTurkey"
-                            class="order-social-link"
-                            target="_blank"
-                            >youtube</a
-                          >
- 
+            <div class="container_social-networks">
+              <p class="social-networks-title">
+                Follow us on our social networks:
+              </p>
+              <ul class="social-networks-list">
+                <li class="social-networks-item">
+                  <a
+                    href="https://www.instagram.com/goit.turkiye/"
+                    class="order-social-link"
+                    target="_blank"
+                    >instagram</a
+                  >
+                </li>
+                <li class="social-networks-item">/</li>
+                <li class="social-networks-item">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61558036560161/"
+                    class="order-social-link"
+                    target="_blank"
+                    >facebook</a
+                  >
+                </li>
+                <li class="social-networks-item">/</li>
+                <li class="social-networks-item">
+                  <a
+                    href="https://www.youtube.com/@GoITTurkey"
+                    class="order-social-link"
+                    target="_blank"
+                    >youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
