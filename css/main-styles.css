@@ -134,15 +134,11 @@ body {
 /* FOOTER*/
 .footer {
   background-color: var(--maincolor);
-  /* Footer */
-
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 50px 100px;
   gap: 125px;
-
   position: absolute;
   width: 1280px;
   height: 391px;
@@ -166,9 +162,6 @@ body {
   vertical-align: baseline;
 }
 .footer-logo-text {
-  /* logo+text */
-
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -177,290 +170,209 @@ body {
 
   width: 513px;
   height: 103px;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 .footer-logo {
-  /* logo */
-
   width: 194px;
   height: 18px;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 .footer-logo-title {
-  /* logo */
   text-transform: uppercase;
   width: 194px;
   height: 18px;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .footer-logo-p {
-  /* Whether you're looking for a healthy snack or a thoughtful gift, our fruit baskets are the perfect choice. */
-
   width: 265px;
   height: 60px;
-
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  /* or 125% */
   display: flex;
   align-items: center;
-
   color: #fbfbfb;
-
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
 }
-.footer-menu-contact {
-  /* block */
 
-  /* Auto layout */
+.footer-menu-contact {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 121px;
-
   width: 513px;
   height: 146px;
-
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 .footer-menu {
-  /* menu */
-
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 25px;
-
   width: 177px;
   height: 146px;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
+
 .footer-menu-ul {
 }
-.footer-menu-li {
-  /* how it works */
 
+.footer-menu-li {
   width: 177px;
   height: 48px;
-
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
-  /* identical to box height, or 100% */
   display: flex;
-  /* align-items: center; */
   letter-spacing: -0.015em;
-
   color: #fbfbfb;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .footer-contact {
-  /* contacts */
-
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 25px;
-
   width: 215px;
   height: 85px;
-
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
 }
-.footer-contact-phone {
-  /* +380 (68) 443-94-26 */
 
+.footer-contact-phone {
   width: 174px;
   height: 20px;
-
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
-  /* identical to box height, or 111% */
   display: flex;
   align-items: center;
   letter-spacing: -0.015em;
-
   color: #fbfbfb;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .footer-contact-address {
-  /* 1678 S. Pioneer Road Salt Lake City UT 84104 */
-
   width: 215px;
   height: 40px;
-
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
-  /* or 111% */
   display: flex;
   align-items: center;
   letter-spacing: -0.015em;
-
   color: #fbfbfb;
-
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 .footer-privacy-copyright {
-  /* Privacy Policy */
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 660px;
   color: #fbfbfb;
-
   width: 1080px;
   height: 20px;
-
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
 }
-.footer-privacy {
-  /* block */
 
-  /* Auto layout */
+.footer-privacy {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px;
   gap: 8px;
-
   width: 248px;
   height: 20px;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-.footer-copyright {
-  /* block */
 
-  /* Auto layout */
+.footer-copyright {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px;
   gap: 8px;
-
   width: 172px;
   height: 20px;
-
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 .footer-privacy-text {
-  /* Privacy Policy */
-
   height: 20px;
-
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
-  /* identical to box height, or 111% */
   display: flex;
   align-items: center;
   letter-spacing: -0.015em;
-
   color: rgba(251, 251, 251, 0.5);
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .footer-copyright-text {
-  /* ©Green Harvest 2023 */
-
   width: 172px;
   height: 20px;
-
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
-  /* identical to box height, or 111% */
   display: flex;
   align-items: center;
   letter-spacing: -0.015em;
-
   color: rgba(251, 251, 251, 0.5);
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
+
 /* TABLET WEBSITE*/
 @media (min-width: 375px) and (max-width: 768px) {
   .vegetables {
