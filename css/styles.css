@@ -924,7 +924,7 @@ body {
         gap: 10px;
         padding: 0 auto;
         background-color: #ffffff;
-        radius: 30px;
+        border-radius: 30px;
         font-size: 48px;
         color: #141414;
         max-width: 355px;
@@ -1309,7 +1309,7 @@ body {
     .description {
         font-size: 14px;
         line-height: 18px;
-        weight: 500px;
+        font-weight: 500;
         color: #141414;
     }
 /* REVIEWS */
@@ -1485,12 +1485,11 @@ body {
     gap: 20px;
   }
 
-  .description {
+.description {
     font-size: 14px;
     line-height: 18px;
-    weight: 500px;
+    font-weight: 500; /* Düzeltildi */
     color: #141414;
-  }
 }
 
 /* YOUR ORDER */
@@ -2060,3 +2059,4 @@ body {
       justify-content: space-between;
     }
   }
+}
