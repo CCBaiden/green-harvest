@@ -2032,6 +2032,14 @@ your order tamamı başlangıç */
   letter-spacing: -0.01em;
   color: var(--main-text);
 }
+.social-networks-item a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: var(--main-text);
+}
 
 @media screen and (min-width: 375px) {
   .social-networks-item {
