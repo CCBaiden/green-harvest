@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=5.0" />
   <title>Green Harvest</title>
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/reset.css" />
@@ -17,7 +17,7 @@
 <body>
 
   <!-- HERO STARTS -->
-  <section class="hero-section">
+  <section class="hero-section" id="hero">
     <div class="hero-container">
       <div class="hero-block">
         <h1 class="hero-head">
@@ -36,11 +36,13 @@
       <!-- HEADER START -->
       <div class="header-container">
         <div class="logo-container">
-          <a href="#"><svg class="top-square">
+          <a href="#hero">
+            <svg class="top-square">
               <use xlink:href="./img/svg-sprite.svg#icon-Desktop-Square"></use>
             </svg>
           </a>
-          <a href="#"><svg class="top-link">
+          <a href="#hero">
+            <svg class="top-link">
               <use xlink:href="./img/svg-sprite.svg#icon-GreenHarvest-Desktop"></use>
             </svg>
           </a>
@@ -323,7 +325,7 @@
     <div class="footer-container">
       <div class="footer-top">
         <div class="footer-logo">
-          <a href="#">
+          <a href="#hero">
             <div class="footer-logo-div">
               <p class="footer-logo-span">
                 <svg class="bottom-square">
@@ -342,9 +344,9 @@
         </div>
         <div class="footer-block">
           <ul class="footer-menu">
-            <li class="footer-menu-span"><a href="#">how it works</a></li>
-            <li class="footer-menu-span"><a href="#">vegetables</a></li>
-            <li class="footer-menu-span"><a href="#">reviews</a></li>
+            <li class="footer-menu-span"><a href="#howitworks">how it works</a></li>
+            <li class="footer-menu-span"><a href="#vegetables">vegetables</a></li>
+            <li class="footer-menu-span"><a href="#reviews">reviews</a></li>
           </ul>
           <ul class="footer-contacts">
             <li class="footer-contacts-span"><a href="+380(68)443-94-26">+380 (68) 443-94-26</a></li>
