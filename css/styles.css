@@ -1443,17 +1443,17 @@ body {
         width: 0px;
         height: 0px;
         overflow: hidden;
-        transition: width 0.3s;
+        transition: width 1s;
         transition-timing-function: ease-in;
     }
 
     .links-container:active {
         margin-top: 750px;
-        width: 117%;
+        width: 112%;
         height: 1200px;
         background-color: var(--maincolor);
         position: absolute;
-        right: -33px;
+        right: -20px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
