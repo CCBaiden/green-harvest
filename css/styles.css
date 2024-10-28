@@ -1440,93 +1440,77 @@ body {
     }
 
     .links-container {
-        position: absolute;
         width: 0px;
         height: 0px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
+        overflow: hidden;
+        transition: width 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    .links-container:active {
+        margin-top: 750px;
+        width: 117%;
+        height: 1200px;
+        background-color: var(--maincolor);
+        position: absolute;
+        right: -33px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         overflow: hidden;
     }
 
-    .links-x-button-svg {
-        left: 300px;
-        position: absolute;
-        width: 10px;
-        height: 0px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-
-    .links-x-button {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-
-    .links-nav {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    .shop-now-button {
+        background-color: var(--white);
+        color: var(--maincolor);
+        position: relative;
+        bottom: -400px;
+        justify-content: center;
+        visibility: visible;
     }
 
     .links-list {
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .links-item {
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    .links-nav {
+        flex-direction: column;
     }
 
-    .links-item a {
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    .links-x-button {
+        position: relative;
+        overflow: visible;
     }
 
+    .links-x-button-svg {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        overflow: visible;
+        left: 220px;
+        top: -280px;
+    }
 
+    .links-item:hover {
+        background-color: var(--white);
+    }
+
+    .links-item a:hover {
+        color: var(--maincolor);
+    }
+
+    .links-list-button-svg {
+        width: 22px;
+        height: 16px;
+    }
+
+    .links-list-button {
+        width: 27px;
+        height: 20px;
+    }
     /* HEADER END */
     /* HERO START */
     .hero-container {
