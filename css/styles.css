@@ -210,8 +210,6 @@ body {
 .hero-img {
     width: 650px;
     height: 800px;
-    padding-top: 58px;
-    padding-bottom: 410px;
     background-image: url(../img/hero/fruits.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1030,8 +1028,7 @@ body {
 /*--------------------------------------------------------------------------*/
 
 /* TABLET WEBSITE*/
-@media screen and (max-width:768px) {
-
+@media (min-width:768px) and (max-width:1280px) {
     /* HEADER START */
     .header-container {
         width: 704px;
@@ -1041,6 +1038,14 @@ body {
     }
 
     .links-container {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition: width 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    .links-container:active {
         margin-top: 750px;
         width: 50%;
         height: 1200px;
@@ -1050,6 +1055,16 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        overflow: hidden;
+    }
+
+    .shop-now-button {
+        background-color: var(--white);
+        color: var(--maincolor);
+        position: relative;
+        bottom: -400px;
+        justify-content: center;
+        visibility: visible;
     }
 
     .links-list {
@@ -1062,27 +1077,23 @@ body {
         flex-direction: column;
     }
 
-    .shop-now-button {
-        background-color: var(--white);
-        color: var(--maincolor);
-        position: absolute;
-        bottom: 50px;
-        right: 100px;
-    }
-
     .links-x-button {
-        position: static;
+        position: relative;
         overflow: visible;
     }
 
     .links-x-button-svg {
-        top: 0;
-        left: 680px;
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        overflow: visible;
+        left: 220px;
+        top: -280px;
     }
 
     .links-item:hover {
         background-color: var(--white);
-
     }
 
     .links-item a:hover {
@@ -1090,21 +1101,13 @@ body {
     }
 
     .links-list-button-svg {
-        position: absolute;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        overflow: hidden;
+        width: 27px;
+        height: 20px;
     }
 
     .links-list-button {
-        position: absolute;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        overflow: hidden;
+        width: 27px;
+        height: 20px;
     }
 
     /* HEADER END */
@@ -1408,7 +1411,7 @@ body {
 /* MOBİLE WEBSITE*/
 
 
-@media screen and (max-width: 375px) {
+@media (min-width:0px) and (max-width: 768px) {
 
     /* HEADER START */
     .header-container {
@@ -1523,22 +1526,13 @@ body {
         overflow: hidden;
     }
 
-    .links-list-button-svg {
-        width: 22px;
-        height: 16px;
-    }
-
-    .links-list-button {
-        width: 32px;
-        height: 32px;
-    }
 
     /* HEADER END */
     /* HERO START */
     .hero-container {
         width: 375px;
         height: 812px;
-        padding: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 20px;
         flex-direction: column;
         gap: 48px;
     }
