@@ -1042,7 +1042,7 @@ body {
         width: 0px;
         height: 0px;
         overflow: hidden;
-        transition: width 0.3s;
+        transition: width 0.5s;
         transition-timing-function: ease-in;
     }
 
@@ -1104,11 +1104,13 @@ body {
     .links-list-button-svg {
         width: 27px;
         height: 20px;
+        cursor: pointer;
     }
 
     .links-list-button {
         width: 27px;
         height: 20px;
+        cursor: pointer;
     }
 
     /* HEADER END */
@@ -1444,13 +1446,12 @@ body {
         width: 0px;
         height: 0px;
         overflow: hidden;
-        transition: width 0.5s;
-        transition-timing-function: ease-in;
+        visibility: hidden;
+        transition: width .5s ease-in;
     }
-
-    .links-container:active {
+    .links-container:active{
         margin-top: 750px;
-        width: 112%;
+        width: 375px;
         height: 1200px;
         background-color: var(--maincolor);
         position: absolute;
@@ -1459,8 +1460,8 @@ body {
         justify-content: center;
         flex-direction: column;
         overflow: hidden;
+        visibility: visible;
     }
-
     .shop-now-button {
         background-color: var(--white);
         color: var(--maincolor);
@@ -1486,13 +1487,12 @@ body {
     }
 
     .links-x-button-svg {
-        top: 0px;
         width: 40px;
         height: 40px;
         position: relative;
         overflow: visible;
         left: 220px;
-        top: -280px;
+        top: -260px;
     }
 
     .links-item:hover {
@@ -1506,11 +1506,15 @@ body {
     .links-list-button-svg {
         width: 22px;
         height: 16px;
+        visibility: visible;
+        cursor: pointer;
     }
 
     .links-list-button {
         width: 27px;
         height: 20px;
+        visibility: visible;
+        cursor: pointer;
     }
 
     /* HEADER END */
