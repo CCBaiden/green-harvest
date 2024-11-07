@@ -47,27 +47,31 @@
             </svg>
           </a>
         </div>
-        <div class="links-container">
+        <div class="links-container" id="mySidenav">
           <nav class="links-nav">
             <div class="links-x-button">
-              <svg class="links-x-button-svg">
-                <use xlink:href="./img/svg-sprite.svg#icon-Desktop-x"></use>
-              </svg>
+              <label for="toggle" onclick="closeNav()">
+                <svg class="links-x-button-svg">
+                  <use xlink:href="./img/svg-sprite.svg#icon-Desktop-x"></use>
+                </svg>
+              </label>
             </div>
             <ul class="links-list">
               <li class="links-item"><a href="#howitworks"> How it works</a></li>
               <li class="links-item"><a href="#vegetables"> Vegetables</a></li>
               <li class="links-item"><a href="#reviews"> Reviews </a></li>
             </ul>
-            <div class="links-list-button">
-              <svg class="links-list-button-svg">
-                <use xlink:href="./img/svg-sprite.svg#icon-Mobile-List"></use>
-              </svg>
-            </div>
           </nav>
           <a href="#">
             <div class="shop-now-button shop-nw-act" type="button">SHOP NOW</div>
           </a>
+        </div>
+        <div class="links-list-button" id="List-item">
+          <label for="toggle" onclick="openNav()">
+            <svg class="links-list-button-svg">
+              <use xlink:href="./img/svg-sprite.svg#icon-Mobile-List"></use>
+            </svg>
+          </label>
         </div>
       </div>
 
@@ -361,7 +365,21 @@
     </div>
   </section>
   <!-- FOOTER END -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "50%";
+      if (screen.width < 767) {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
 
+      document.getElementById("List-item").style.visibility = "hidden";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("List-item").style.visibility = "visible";
+    }
+  </script>
 </body>
 
 </html>

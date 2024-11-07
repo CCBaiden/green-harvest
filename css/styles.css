@@ -25,6 +25,10 @@ body {
     overflow: hidden;
 }
 
+.toggle {
+    display: none;
+}
+
 /* HEADER START */
 .header-container {
     width: 1280px;
@@ -1039,16 +1043,8 @@ body {
     }
 
     .links-container {
-        width: 0px;
-        height: 0px;
-        overflow: hidden;
-        transition: width 0.5s;
-        transition-timing-function: ease-in;
-    }
-
-    .links-container:active {
         margin-top: 750px;
-        width: 50%;
+        width: 0;
         height: 1200px;
         background-color: var(--maincolor);
         position: absolute;
@@ -1057,6 +1053,7 @@ body {
         justify-content: center;
         flex-direction: column;
         overflow: hidden;
+        transition: 0.5s;
     }
 
     .shop-now-button {
@@ -1091,6 +1088,7 @@ body {
         overflow: visible;
         left: 220px;
         top: -280px;
+        cursor: pointer;
     }
 
     .links-item:hover {
@@ -1443,15 +1441,8 @@ body {
     }
 
     .links-container {
-        width: 0px;
-        height: 0px;
-        overflow: hidden;
-        visibility: hidden;
-        transition: width .5s ease-in;
-    }
-    .links-container:active{
         margin-top: 750px;
-        width: 375px;
+        width: 0;
         height: 1200px;
         background-color: var(--maincolor);
         position: absolute;
@@ -1460,8 +1451,9 @@ body {
         justify-content: center;
         flex-direction: column;
         overflow: hidden;
-        visibility: visible;
+        transition: 0.5s;
     }
+
     .shop-now-button {
         background-color: var(--white);
         color: var(--maincolor);
@@ -1506,14 +1498,22 @@ body {
     .links-list-button-svg {
         width: 22px;
         height: 16px;
-        visibility: visible;
         cursor: pointer;
     }
 
     .links-list-button {
         width: 27px;
         height: 20px;
-        visibility: visible;
+        cursor: pointer;
+    }
+
+    .links-x-button-svg {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        overflow: visible;
+        left: 130px;
+        top: -270px;
         cursor: pointer;
     }
 
